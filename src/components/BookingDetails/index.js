@@ -1,6 +1,4 @@
-// BookingDetails.js
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { submitFormData } from "../../redux/bookingSlice";
 import Navbar from "../Navbar";
@@ -24,25 +22,33 @@ const BookingDetails = () => {
     addressLine2: "",
   });
 
+  // UseEffect to run only on the client side
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Add any code that accesses window or localStorage
+      console.log("Window is available");
+    }
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = () => {
-    // Assuming formData contains all the form values including checkInDate, checkOutDate, and rooms
     const bookingData = {
-      ...formData, // formData holds all the form values
+      ...formData,
       checkInDate,
       checkOutDate,
       rooms,
     };
 
-    // Storing the data in localStorage
-    localStorage.setItem("bookingDetails", JSON.stringify(bookingData));
+    // Check if localStorage is available
+    if (typeof window !== "undefined") {
+      localStorage.setItem("bookingDetails", JSON.stringify(bookingData));
+    }
 
-    // Redirect to the BookingSuccess page
-    navigate("/booking-success");
+    navigate("/booking-success"); // Redirect to the BookingSuccess page
   };
 
   const incrementRooms = () => setRooms((prev) => prev + 1);
@@ -61,7 +67,6 @@ const BookingDetails = () => {
   return (
     <div>
       <Navbar />
-
       <div className="order-form-container">
         <div className="row">
           <div>
@@ -73,7 +78,7 @@ const BookingDetails = () => {
               value={formData.name}
               onChange={handleChange}
             />
-          </div>{" "}
+          </div>
           <br />
           <label>EMAIL</label>
           <input
@@ -96,7 +101,7 @@ const BookingDetails = () => {
               <option value="+1">+1</option>
               <option value="+91">+91</option>
             </select>
-            <label>PHNE NUMBER</label>
+            <label>PHONE NUMBER</label>
             <input
               type="tel"
               name="phoneNumber"
