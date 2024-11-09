@@ -1,0 +1,123 @@
+/* CSS for Navbar */
+* {
+  margin: 0px;
+}
+.cont {
+  background-color: #ff4d4d;
+  height: 80%;
+  padding: 37px; /* Ensures full viewport height */
+}
+.paragraph {
+  font-size: 50px;
+  font-weight: 500;
+  padding-bottom: 13px;
+}
+.main-container {
+  background-color: white;
+  min-height: 80vh;
+  /* Or another appropriate value */
+}
+
+.text {
+  padding-bottom: 10px; /* Reduced padding to bring icons closer */
+  margin-bottom: 0; /* Remove any default margin */
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center; /* Ensure icons are vertically centered */
+}
+
+.icons a {
+  color: #000; /* Set default icon color */
+}
+
+.icons a:hover {
+  color: #3b5998; /* Facebook color on hover */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.home-content {
+  flex: 1;
+  padding-left: 50px;
+  font-family: sans-serif;
+}
+
+.ex2 {
+  flex: 1;
+}
+
+/* Additional-content styles with reduced space between divs */
+.additional-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 30px auto; /* Center align and add space above/below */
+  gap: 10px; /* Reduced gap between divs */
+}
+
+.div1,
+.div2,
+.div3 {
+  flex: 1;
+  padding: 5px; /* Optional: reduce padding if more compact spacing is desired */
+}
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.div3 {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Reduced gap for buttons and text inside .div3 */
+}
+
+.minus-button,
+.plus-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px; /* Reduced padding for compact button size */
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.minus-button:hover,
+.plus-button:hover {
+  background-color: #555;
+}
+
+.book-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.book-button button {
+  background-color: #1c944b;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.book-button button:hover {
+  background-color: #155e3b;
+}
+h3 {
+  font-family: sans-serif;
+  padding-bottom: 13px;
+}

@@ -1,0 +1,20 @@
+/* src/components/Services.css */
+.services-container {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly */
+  gap: 20px; /* Adds space between each service item */
+  padding: 20px;
+}
+
+.service-item {
+  flex: 1; /* Ensures each item takes equal width */
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.containerr {
+  background-color: white;
+  height: 170vh;
+}

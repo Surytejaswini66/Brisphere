@@ -1,0 +1,93 @@
+/* BookingSuccess.css */
+
+/* Container for the entire success page */
+.booking-success-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Left column for displaying user details */
+.details-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+/* Right column for image and additional info */
+.details-right {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+}
+
+/* Container for image and additional info in a row */
+.image-and-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Styling for the image */
+.image-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 20px; /* Space between image and info */
+}
+
+/* Styling for the additional info */
+.additional-info {
+  flex: 1;
+}
+
+/* Styling for the Order Complete text */
+.additional-info h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styling for the Contact Us link */
+.additional-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.additional-info a:hover {
+  text-decoration: underline;
+}
+.booking-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.booking-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.booking-row > div {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.booking-row > div:last-child {
+  margin-right: 0;
+}
+
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.payment-row button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
