@@ -54,7 +54,9 @@ const BookingSuccess = () => {
             <div className="additional-info">
               <h1>Order Complete</h1>
               <p>Have questions?</p>
-              <a href="https://leh.nic.in/contact-us/">CONTACT US</a>
+              <a alt="contact-us" href="https://leh.nic.in/contact-us/">
+                CONTACT US
+              </a>
             </div>
           </div>
         </div>

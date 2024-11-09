@@ -29,7 +29,10 @@ function Discover() {
         </div>
         <div className="discover-item">
           <div className="ex2">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/77/76/74/mountains-in-ladakh.jpg" />
+            <img
+              alt="media-icon"
+              src="https://media-cdn.tripadvisor.com/media/photo-s/0a/77/76/74/mountains-in-ladakh.jpg"
+            />
           </div>
           <div className="discover-content">
             <div className="img-row">

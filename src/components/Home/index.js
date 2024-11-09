@@ -41,6 +41,7 @@ const Home = () => {
             {/* Icons positioned directly below the paragraph */}
             <div className="icons">
               <a
+                alt="facebook"
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -51,6 +52,7 @@ const Home = () => {
                 />
               </a>
               <a
+                alt="instagram"
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
